@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ProductCard from '../components/ProductCard';
+import ProductList from '../components/ProductList';
 
 export default function ProductsPage(){
     const [products, setProducts] = useState([]);
@@ -28,15 +28,7 @@ export default function ProductsPage(){
 
             <div className="container">
                 <h1 className="mt-5">SCOPRI I NOSTRI PRODOTTI</h1>
-                <div className="row gy-3 py-4">
-                    {products.map((product, index)=>{
-                        return(
-                            <>
-                                <ProductCard product={product}/>
-                            </>
-                        )
-                    })}
-                </div>
+                <ProductList products={products}/>
             </div>
 
         )}
