@@ -1,0 +1,17 @@
+.card-img {
+  height: 350px; 
+  object-fit: cover;
+}
+
+/* Imposta il layout del body per utilizzare Flexbox */
+#root {
+  display: flex;
+  flex-direction: column;  /* Organizza gli elementi in colonna */
+  min-height: 100vh;  /* Imposta l'altezza minima della pagina a 100vh */
+  margin: 0;  /* Rimuove i margini di default */
+}
+
+/* Assicurati che il footer sia sempre in fondo */
+footer {
+  margin-top: auto;  /* Spinge il footer sempre in basso */
+}
